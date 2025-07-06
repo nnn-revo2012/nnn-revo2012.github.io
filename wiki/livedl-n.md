@@ -2,7 +2,7 @@
 
 諸事情によりlivedl-nは開発終了いたしました(May 31, 2025)  
 以降のニコ生の仕様変更には対応いたしません。  
-また、https://github.com/nnn-revo2012/livedl-n についてはそのうち非公開になります。  
+また、[https://github.com/nnn-revo2012/livedl-n](https://github.com/nnn-revo2012/livedl-n) についてはそのうち非公開になります。  
 本Wikiは一応残しておきます  
 
 ## 動画のダウンロードについて  
@@ -18,9 +18,9 @@ dliveで配信する動画はすべてAES128暗号化されており、これを
 
 ## ダウンロード
 以下にWindows版のビルドがあります。  
-https://github.com/nnn-revo2012/livedl-n/releases  
+[https://github.com/nnn-revo2012/livedl-n/releases](https://github.com/nnn-revo2012/livedl-n/releases)  
 その他の環境については、各自でビルドしてください。ビルド方法が分からない場合は以下を参照ください。  
-See https://github.com/nnn-revo2012/livedl-n  
+See [https://github.com/nnn-revo2012/livedl-n](https://github.com/nnn-revo2012/livedl-n)  
 
 ## 使い方(概要)  
 コマンドライン（PowerShellやコマンドプロンプト,シェル等）で実行して下さい。  
