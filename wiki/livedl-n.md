@@ -1,9 +1,11 @@
 # livedl-n  
 
-諸事情によりlivedl-nは開発終了いたしました(May 31, 2025)  
-以降のニコ生の仕様変更には対応いたしません。  
-また、[https://github.com/nnn-revo2012/livedl-n](https://github.com/nnn-revo2012/livedl-n) についてはそのうち非公開になります。  
+livedl-nは2025年5月31日をもって開発終了いたしました  
+現時点(2025/7/20)ではコメントのみダウンロード可能ですが、今後のニコ生の仕様変更には対応いたしません  
+[https://github.com/nnn-revo2012/livedl-n](https://github.com/nnn-revo2012/livedl-n) についてはそのうち非公開になります  
 本Wikiは一応残しておきます  
+
+私にはよくわかりませんが、[四八福星間開発](https://person-of-ehomaki.blog.jp) というサイトを見るといいかもしれません  
 
 ## 動画のダウンロードについて  
 **ニコニコ生放送（ニコ生）は2025/02/05から新動画サーバー(dlive)の配信に移行しています。  
