@@ -2,7 +2,7 @@
 
 livedl-nは2025年5月31日をもって開発終了いたしました  
 現時点(2025/7/20)ではコメントのみダウンロード可能ですが、今後のニコ生の仕様変更には対応いたしません  
-[https://github.com/nnn-revo2012/livedl-n](https://github.com/nnn-revo2012/livedl-n) についてはそのうち非公開になります  
+[https://github.com/nnn-revo2012/livedl-n](https://github.com/nnn-revo2012/livedl-n) は公開終了いたしました(2025年8月1日)  
 本Wikiは一応残しておきます  
 
 私にはよくわかりませんが、[四八福星間開発](https://person-of-ehomaki.blog.jp) というサイトを見るといいかもしれません  
@@ -19,10 +19,7 @@ dliveで配信する動画はすべてAES128暗号化されており、これを
 本ツールはhimananiitoさんが作成されたlivedlを元にしてnnn-revo2012がニコ生の仕様変更対応、機能追加を行ったツールです。  
 
 ## ダウンロード
-以下にWindows版のビルドがあります。  
-[https://github.com/nnn-revo2012/livedl-n/releases](https://github.com/nnn-revo2012/livedl-n/releases)  
-その他の環境については、各自でビルドしてください。ビルド方法が分からない場合は以下を参照ください。  
-See [https://github.com/nnn-revo2012/livedl-n](https://github.com/nnn-revo2012/livedl-n)  
+本ソフトウェアの公開は終了いたしました(2025年8月1日)  
 
 ## 使い方(概要)  
 コマンドライン（PowerShellやコマンドプロンプト,シェル等）で実行して下さい。  
