@@ -1,3 +1,10 @@
+# ニコ生向けStreamlink(SlNicoLiveRec)の設定、FAQ  
+
+## 目次  
+
+- ニコニコ生放送で Streamlink --default-stream で指定する画質設定一覧  
+- SlNicoLiveRec（Streamlink）で「配信していません」（error: No playable streams found on this URL:）が表示され録画できない  
+
 ## ニコニコ生放送で Streamlink --default-stream で指定する画質設定一覧  
 
 コピペするように"＊＊＊＊"のように囲ってあります  
@@ -124,7 +131,7 @@ error: No playable streams found on this URL: https://live.nicovideo.jp/watch/lv
 配信していません
 ```  
 
-**対策**  
+### 解決方法  
 - プレミアム会員か確認してみてください  
 - 「設定」→「キャッシュされたログイン資格情報を消去」を有効にしてみてください  
 - user_sessionでログインしている場合は、user_sessionを取得しなおしてみてください  
@@ -143,6 +150,7 @@ error: No playable streams found on this URL: https://live.nicovideo.jp/watch/lv
 error: No playable streams found on this URL: https://live.nicovideo.jp/watch/lv340299355
 配信していません
 ```  
-**対策**  
+
+### 解決方法  
 - しばらく時間を置いてから録画・ダウンロードする  
 
