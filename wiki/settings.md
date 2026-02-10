@@ -1,11 +1,15 @@
-# ニコ生向けStreamlink(SlNicoLiveRec)の設定、FAQ  
+# ニコ生向けSlNicoLiveRec(Stramlink)の設定、FAQ  
 
 ## 目次  
 
-- ニコニコ生放送で Streamlink --default-stream で指定する画質設定一覧  
-- SlNicoLiveRec（Streamlink）で「配信していません」（error: No playable streams found on this URL:）が表示され録画できない  
+- [SlNicoLiveRec(Streamlink --default-stream)で指定する画質設定一覧]()  
+  - ユーザー生放送、チャンネル、公式全て録画する  
+  - チャンネル、公式のみ録画する  
+- [SlNicoLiveRecで「E-Mail、Password でログインしました」と表示されるが何もしないで終了する]()  
+- [SlNicoLiveRecで「user_sessionでログイン」に設定する方法]()  
+- [SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない]()  
 
-## ニコニコ生放送で Streamlink --default-stream で指定する画質設定一覧  
+## SlNicoLiveRec(Streamlink --default-stream)で指定する画質設定一覧  
 
 コピペするように"＊＊＊＊"のように囲ってあります  
 ＊SlNicoLiveRecの場合は、録画画質→default-streamにコピペした後両端の""を削除してください  
@@ -13,7 +17,7 @@
 **ユーザー生のタイムシフトは2026年3月29日まで新旧仕様の画質が混在する**  
 **（2026年1月27日までのユーザー生のタイムシフトは旧画質、1月28日以降のタイムシフトは新画質になる）**  
 
-### ユーザー生放送、チャンネル、公式全て録画する人向け  
+### ユーザー生放送、チャンネル、公式全て録画する  
 
 最高8Mbps（最高6Mbpsの場合も同じ）  
 
@@ -56,7 +60,7 @@
 --default-stream worst
 ```
 
-### チャンネル、公式のみ録画する人向け  
+### チャンネル、公式のみ録画する  
 
 コピペするように"＊＊＊＊"のように囲ってあります  
 ＊SlNicoLiveRecの場合は、録画画質→default-streamにコピペした後両端の""を削除してください  
@@ -118,10 +122,43 @@
 --default-stream worst
 ```
 
-## SlNicoLiveRec（Streamlink）で「配信していません」（error: No playable streams found on this URL:）が表示され録画できない
+## SlNicoLiveRecで「E-Mail、Password でログインしました」と表示されるが何もしないで終了する  
 
-``error: No playable streams found on this URL: [ニコ生URL]``  
-``配信していません``  
+```
+[plugins.nicolive][info] Logging in via provided email and password
+E-Mail、Password でログインしました  
+---------- Program End Time: 2026/02/10 15:26:18.4817 ----------
+```  
+
+### 原因：２段階認証が必要なアカウントでログインしている  
+- SlNicoLiveRecは２段階認証オンのアカウントでE-mail/Passwordでログインできません  
+
+### 解決方法  
+- ブラウザー(ChromeやFirefoxなど)からCookieのuser_sessionを取得してuser_sessionでログインしてください  
+- ２段階認証をオフにできるアカウントであればオフにしてください（非推奨）  
+
+## SlNicoLiveRecで「user_sessionでログイン」に設定する方法  
+
+他ツールでもuser_sessionを指定できるツールなら6.の手順を他ツールの手順に変換すれば可能です  
+ニコニコにログインしているブラウザーからuser_sessionというCookieをコピーする必要があります。
+
+### ☆Chromeの場合  
+
+1. Chromeでニコニコにログインする（２段階認証も可能）※既にログインしているなら必要なし  
+1. .右上３点マーク→その他のツール→デベロッパーツールを選ぶ  
+1. ApplicationメニューのStorage→Cookiesを開き、その中のhttps://www.nicovideo.jp をクリック  
+1. するとCookieの一覧表が表示されるので、その中のNameがuser_sessionを探してクリック  
+1. 表の下にuser_session_数字_xxxxxxxxxxxx と表示されるのでその行全てをコピー  
+1. SlNicoLiveRecの設定→ニコニコアカウント情報で「user_sessionでログイン」を選び、user_sessionの欄に上記でコピーした行全てを貼り付ける 
+
+※Chrome系（Edge、Opera etc）であればメニュー名が違ってても手順はほぼ同じ  
+
+## SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない  
+
+```
+error: No playable streams found on this URL: [ニコ生URL]
+配信していません
+```  
 
 ### 原因１：タイムシフトが見れない状態で接続  
 - SlNicoLiveRec（Streamlink）で設定しているuser_sessionが無効になった、タイムシフト期限切れ、一般アカウントでログイン（予約なし）、ブラウザで"視聴する"ボタンを押してないなど  
