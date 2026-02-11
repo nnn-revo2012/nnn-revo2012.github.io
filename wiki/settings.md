@@ -1,4 +1,4 @@
-# ニコ生向けSlNicoLiveRec(Stramlink)の設定、FAQ  
+# ニコ生向けSlNicoLiveRec(Streamlink)の設定、FAQ  
 
 ## 目次  
 
@@ -9,6 +9,7 @@
 - [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)  
 - [SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない](https://nnn-revo2012.github.io/wiki/settings#slnicoliverecstreamlink%E3%81%A7%E9%85%8D%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E9%8C%B2%E7%94%BB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84)  
 
+***
 ## SlNicoLiveRec(Streamlink --default-stream)で指定する画質設定一覧  
 
 コピペするように"＊＊＊＊"のように囲ってあります  
@@ -122,6 +123,7 @@
 --default-stream worst
 ```
 
+***
 ## SlNicoLiveRecで「E-Mail、Password でログインしました」と表示されるが何もしないで終了する  
 
 ```
@@ -138,15 +140,16 @@ E-Mail、Password でログインしました
   設定方法は [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) を参照  
 - ２段階認証をオフにできるアカウントであればオフにしてください（非推奨）  
 
+***
 ## SlNicoLiveRecで「user_sessionでログイン」に設定する方法  
 
-他ツールでもuser_sessionを指定できるツールなら6.の手順を他ツールの手順に変換すれば可能です  
+他ツールでもuser_sessionを指定できるツールなら6.の手順(Firefoxなら8.～9.)を他ツールの手順に変換すれば可能です  
 ニコニコにログインしているブラウザーからuser_sessionというCookieをコピーする必要があります。
 
 ### ☆Chromeの場合  
 
 1. Chromeでニコニコにログインする（２段階認証も可能）※既にログインしているなら必要なし  
-1. .右上３点マーク→その他のツール→デベロッパーツールを選ぶ  
+1. 右上３点マーク→その他のツール→デベロッパーツールを選ぶ  
 1. ApplicationメニューのStorage→Cookiesを開き、その中のhttps://www.nicovideo.jp をクリック  
 1. するとCookieの一覧表が表示されるので、その中のNameがuser_sessionを探してクリック  
 1. 表の下にuser_session_数字_xxxxxxxxxxxx と表示されるのでその行全てをコピー  
@@ -154,6 +157,19 @@ E-Mail、Password でログインしました
 
 ※Chrome系（Edge、Opera etc）であればメニュー名が違ってても手順はほぼ同じ  
 
+### ☆Firefoxの場合  
+
+1. Firefoxでhttps://www.nicovideo.jp を表示する  
+1. Firefoxでニコニコにログインする（２段階認証も可能）※既にログインしているなら必要なし  
+1. 右上３点マーク→その他のツール→Web開発ツールを選ぶ  
+1. StorageメニューをクリックするとCookieの一覧（ドメイン）が表示される  
+1. https://www.nicovideo.jp を探してクリック  
+1. 右にCookieの一覧表が表示されるので表の中に名前がuser_sessionとある行をクリック  
+1. 更に右にデータと表示され1行目user_sessionの欄の上でコピー  
+1. SlNicoLiveRecの設定→ニコニコアカウント情報で「user_sessionでログイン」を選び、user_sessionの欄に上記でコピーした行全てを貼り付ける  
+1. コピーした１行の両端に"がついているのでこれを削除（必ずしてください）  
+
+***
 ## SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない  
 
 ```
@@ -162,7 +178,11 @@ error: No playable streams found on this URL: [ニコ生URL]
 ```  
 
 ### 原因１：タイムシフトが見れない状態で接続  
-- SlNicoLiveRec（Streamlink）で設定しているuser_sessionが無効になった、タイムシフト期限切れ、一般アカウントでログイン（予約なし）、ブラウザで"視聴する"ボタンを押してないなど  
+- 以前はタイムシフトが録画できたができなくなった場合  
+  - 設定しているuser_sessionが無効になった、アカウントがプレミアから一般になった、ブラウザで"視聴する"ボタンを押してない、一般アカウントで予約していない、タイムシフト期限切れ　など  
+- 今回初めてSlNicoLiveRecを設定または再設定の場合  
+  - 設定→ニコニコアカウント情報で「ログインしない」になっている、アカウントが一般である、ブラウザで"視聴する"ボタンを押してない、一般アカウントで予約していない、タイムシフト期限切れ　など  
+
 - DEBUGログ：
 ```
 error: No playable streams found on this URL: https://live.nicovideo.jp/watch/lv349598927
@@ -170,11 +190,18 @@ error: No playable streams found on this URL: https://live.nicovideo.jp/watch/lv
 ```  
 
 ### 解決方法  
-- プレミアム会員か確認してみてください  
-- 「設定」→「キャッシュされたログイン資格情報を消去」を有効にしてみてください  
-- user_sessionでログインしている場合は、user_sessionを取得しなおしてみてください  
-  設定方法は [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) を参照  
-- ブラウザで再生開始してからダウンロードを開始してみてください  
+- 以前はタイムシフトが録画できたができなくなった場合  
+  - **「設定」→「キャッシュされたログイン資格情報を消去」を有効にしてみてください**  
+  - **user_sessionでログインしている場合は、user_sessionを取得しなおしてみてください**  
+    設定方法は [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) を参照  
+  - プレミアム会員か確認してみてください  
+  - ブラウザで再生開始してからダウンロードを開始してみてください  
+- 今回初めてSlNicoLiveRecを設定または再設定の場合  
+  - **設定→ニコニコアカウント情報で「user_sessionでログイン」か「E-Mail、Passwordでログイン」のどちらかに設定してください**  
+  - **アカウントが２段階認証オンの場合は必ず「user_sessionでログイン」にしてください**  
+  - 「user_sessionでログイン」の設定方法は [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) を参照  
+  - プレミアム会員か確認してみてください  
+  - ブラウザで再生開始してからダウンロードを開始してみてください  
 
 ### 原因２：wss_apiに接続して動画のURL(playlist)を取得するまでにタイムアウトした、あるいは拒否された  
 - タイムアウト時間はnicolive.py中にSTREAM_READY_TIMEOUT=6(秒)で定義されているが、ニコ生が重くて6秒よりかかることがあるようだ  
