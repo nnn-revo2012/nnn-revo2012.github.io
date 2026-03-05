@@ -5,7 +5,9 @@
 - [SlNicoLiveRec(Streamlink --default-stream)で指定する画質設定一覧](https://nnn-revo2012.github.io/wiki/settings#slnicoliverecstreamlink-default-stream%E3%81%A7%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B%E7%94%BB%E8%B3%AA%E8%A8%AD%E5%AE%9A%E4%B8%80%E8%A6%A7)  
   - [ユーザー生放送、チャンネル、公式全て録画する](https://nnn-revo2012.github.io/wiki/settings#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%94%9F%E6%94%BE%E9%80%81%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E5%85%AC%E5%BC%8F%E5%85%A8%E3%81%A6%E9%8C%B2%E7%94%BB%E3%81%99%E3%82%8B)  
   - [チャンネル、公式のみ録画する](https://nnn-revo2012.github.io/wiki/settings#%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E5%85%AC%E5%BC%8F%E3%81%AE%E3%81%BF%E9%8C%B2%E7%94%BB%E3%81%99%E3%82%8B)  
+
 - [SlNicoLiveRecで「E-Mail、Password でログインしました」と表示されるが何もしないで終了する](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7e-mailpassword-%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A8%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B%E3%81%8C%E4%BD%95%E3%82%82%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E7%B5%82%E4%BA%86%E3%81%99%E3%82%8B)  
+
 - [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)  
   - [☆Chromeの場合](https://nnn-revo2012.github.io/wiki/settings#chrome%E3%81%AE%E5%A0%B4%E5%90%88)  
   - [☆Firefoxの場合](https://nnn-revo2012.github.io/wiki/settings#firefox%E3%81%AE%E5%A0%B4%E5%90%88)  
