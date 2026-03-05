@@ -65,6 +65,7 @@
 
 コピペするように"＊＊＊＊"のように囲ってあります  
 ＊SlNicoLiveRecの場合は、録画画質→default-streamにコピペした後両端の""を削除してください  
+＊**``--default-stream``の引数には``">720p"``のような指定方法はできません**  
 
 最高8Mbps（最高6Mbpsの場合も同じ）  
 
@@ -75,27 +76,15 @@
 ```
 または  
 ```
-">1080p"
-```
-または  
-```
 "1080p,720p,450p,450p_alt,288p,288p_alt"
 ```
 
 最高3Mbps（最高4Mbpsの場合も同じ）
 ```
-">720p"
-```
-または  
-```
 "720p,450p,450p_alt,288p,288p_alt"
 ```
 
 最高2Mbps
-```
-">450p"
-```
-または  
 ```
 "450p,450p_alt,288p,288p_alt"
 ```
@@ -106,10 +95,6 @@
 ```
 
 最高384kbps
-```
-">288p"
-```
-または  
 ```
 "288p,288p_alt"
 ```
@@ -158,6 +143,27 @@ E-Mail、Password でログインしました
 ※Chrome系（Edge、Opera etc）であればメニュー名が違ってても手順はほぼ同じ  
 
 ### ☆Firefoxの場合  
+
+### ■NicoGetCookieを使う（おすすめ） 
+
+**Windows専用プログラムですがGUIを使って簡単にuser_sessionを取得できます**  
+
+手順
+1. NicoGetCookieを https://github.com/nnn-revo2012/NicoGetCookie/releases からダウンロードしてください  
+1. ダウンロード後zipファイルを解凍し、その中のNicoGetCookie.exeをダブルクリックします  
+1. NicoGetCookieが起動します。「ブラウザーから取得」のリストボックスをクリックしてCookieを取得したいブラウザー名を選択してください  
+   ブラウザー名の後ろに「（ｘｘｘｘｘ）」と表示されているのが現在ニコニコにログインされているブラウザーです  
+   **Google Chrome、Microsoft Edge、OperaなどのChromium系ブラウザーからのCookie取得はできません**  
+1. ブラウザー名の後ろに「（ｘｘｘｘｘ）」と表示されているリストを選んだと同時に「取得結果」の「user_session」の下に「user_session_***************」と表示されればＯＫです  
+1. その下の「user_sessionをコピー」ボタンをクリックするとクリップボードにuser_sessionがコピーされます  
+1. NicoGetCookie.exeはここで終了してもＯＫです  
+1. ニコ動やニコ生などの外部ツールでログイン時に「user_session」の文字を入力する欄がある場合、そこにコピーした内容を貼り付けてください  
+
+**※user_sessionの文字は不用意にインターネット等で公開すると悪意のある第三者が簡単にあなたのアカウントにアクセスできるようになるので注意してください** 
+
+### ■直接FirefoxのCookieを取得する  
+
+MacやLinuxの場合、NicoGetCookieを使いたくない場合は以下の手順でuser_sessionを取得できます  
 
 1. Firefoxでhttps://www.nicovideo.jp を表示する  
 1. Firefoxでニコニコにログインする（２段階認証も可能）※既にログインしているなら必要なし  
