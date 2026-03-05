@@ -7,6 +7,11 @@
   - [チャンネル、公式のみ録画する](https://nnn-revo2012.github.io/wiki/settings#%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E5%85%AC%E5%BC%8F%E3%81%AE%E3%81%BF%E9%8C%B2%E7%94%BB%E3%81%99%E3%82%8B)  
 - [SlNicoLiveRecで「E-Mail、Password でログインしました」と表示されるが何もしないで終了する](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7e-mailpassword-%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A8%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B%E3%81%8C%E4%BD%95%E3%82%82%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E7%B5%82%E4%BA%86%E3%81%99%E3%82%8B)  
 - [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)  
+  - [☆Chromeの場合](https://nnn-revo2012.github.io/wiki/settings#chrome%E3%81%AE%E5%A0%B4%E5%90%88)  
+  - [☆Firefoxの場合](https://nnn-revo2012.github.io/wiki/settings#firefox%E3%81%AE%E5%A0%B4%E5%90%88)  
+    - [■NicoGetCookieを使う（おすすめ）](https://nnn-revo2012.github.io/wiki/settings#nicogetcookie%E3%82%92%E4%BD%BF%E3%81%86%E3%81%8A%E3%81%99%E3%81%99%E3%82%81)  
+    - [■直接FirefoxのCookieを取得する](https://nnn-revo2012.github.io/wiki/settings#%E7%9B%B4%E6%8E%A5firefox%E3%81%AEcookie%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)  
+
 - [SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない](https://nnn-revo2012.github.io/wiki/settings#slnicoliverecstreamlink%E3%81%A7%E9%85%8D%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E9%8C%B2%E7%94%BB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84)  
 
 ***
@@ -153,7 +158,7 @@ E-Mail、Password でログインしました
 1. ダウンロード後zipファイルを解凍し、その中のNicoGetCookie.exeをダブルクリックします  
 1. NicoGetCookieが起動します。「ブラウザーから取得」のリストボックスをクリックしてCookieを取得したいブラウザー名を選択してください  
    ブラウザー名の後ろに「（ｘｘｘｘｘ）」と表示されているのが現在ニコニコにログインされているブラウザーです  
-   **Google Chrome、Microsoft Edge、OperaなどのChromium系ブラウザーからのCookie取得はできません**  
+   **※Google Chrome、Microsoft Edge、OperaなどのChromium系ブラウザーからのCookie取得はできません**  
 1. ブラウザー名の後ろに「（ｘｘｘｘｘ）」と表示されているリストを選んだと同時に「取得結果」の「user_session」の下に「user_session_***************」と表示されればＯＫです  
 1. その下の「user_sessionをコピー」ボタンをクリックするとクリップボードにuser_sessionがコピーされます  
 1. NicoGetCookie.exeはここで終了してもＯＫです  
