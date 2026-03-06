@@ -13,6 +13,7 @@
   - [☆Firefoxの場合](https://nnn-revo2012.github.io/wiki/settings#firefox%E3%81%AE%E5%A0%B4%E5%90%88)  
     - [■NicoGetCookieを使う（おすすめ）](https://nnn-revo2012.github.io/wiki/settings#nicogetcookie%E3%82%92%E4%BD%BF%E3%81%86%E3%81%8A%E3%81%99%E3%81%99%E3%82%81)  
     - [■直接FirefoxのCookieを取得する](https://nnn-revo2012.github.io/wiki/settings#%E7%9B%B4%E6%8E%A5firefox%E3%81%AEcookie%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)  
+  
 
 - [SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない](https://nnn-revo2012.github.io/wiki/settings#slnicoliverecstreamlink%E3%81%A7%E9%85%8D%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E9%8C%B2%E7%94%BB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84)  
 
@@ -135,7 +136,7 @@ E-Mail、Password でログインしました
 ***
 ## SlNicoLiveRecで「user_sessionでログイン」に設定する方法  
 
-他ツールでもuser_sessionを指定できるツールなら6.の手順(Firefoxなら8.～9.)を他ツールの手順に変換すれば可能です  
+他ツールでもuser_sessionを指定できるツールなら6.の手順(直接FirefoxのCookieなら8.～9.)を他ツールの手順に変換すれば可能です  
 ニコニコにログインしているブラウザーからuser_sessionというCookieをコピーする必要があります。
 
 ### ☆Chromeの場合  
@@ -156,15 +157,14 @@ E-Mail、Password でログインしました
 **Windows専用プログラムですがGUIを使って簡単にuser_sessionを取得できます**  
 
 手順
-1. NicoGetCookieを https://github.com/nnn-revo2012/NicoGetCookie/releases からダウンロードしてください  
+1. NicoGetCookieを 「Github](https://github.com/nnn-revo2012/NicoGetCookie/releases) からダウンロードしてください  
 1. ダウンロード後zipファイルを解凍し、その中のNicoGetCookie.exeをダブルクリックします  
 1. NicoGetCookieが起動します。「ブラウザーから取得」のリストボックスをクリックしてCookieを取得したいブラウザー名を選択してください  
    ブラウザー名の後ろに「（ｘｘｘｘｘ）」と表示されているのが現在ニコニコにログインされているブラウザーです  
    **※Google Chrome、Microsoft Edge、OperaなどのChromium系ブラウザーからのCookie取得はできません**  
 1. ブラウザー名の後ろに「（ｘｘｘｘｘ）」と表示されているリストを選んだと同時に「取得結果」の「user_session」の下に「user_session_***************」と表示されればＯＫです  
 1. その下の「user_sessionをコピー」ボタンをクリックするとクリップボードにuser_sessionがコピーされます  
-1. NicoGetCookie.exeはここで終了してもＯＫです  
-1. ニコ動やニコ生などの外部ツールでログイン時に「user_session」の文字を入力する欄がある場合、そこにコピーした内容を貼り付けてください  
+1. SlNicoLiveRecの設定→ニコニコアカウント情報で「user_sessionでログイン」を選び、user_sessionの欄に上記でコピーした行全てを貼り付ける  
 
 **※user_sessionの文字は不用意にインターネット等で公開すると悪意のある第三者が簡単にあなたのアカウントにアクセスできるようになるので注意してください** 
 
