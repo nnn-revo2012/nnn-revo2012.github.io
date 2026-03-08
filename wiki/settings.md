@@ -13,7 +13,6 @@
   - [☆Firefoxの場合](https://nnn-revo2012.github.io/wiki/settings#firefox%E3%81%AE%E5%A0%B4%E5%90%88)  
     - [■NicoGetCookieを使う（おすすめ）](https://nnn-revo2012.github.io/wiki/settings#nicogetcookie%E3%82%92%E4%BD%BF%E3%81%86%E3%81%8A%E3%81%99%E3%81%99%E3%82%81)  
     - [■直接FirefoxのCookieを取得する](https://nnn-revo2012.github.io/wiki/settings#%E7%9B%B4%E6%8E%A5firefox%E3%81%AEcookie%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)  
-<p>
 
 - [SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない](https://nnn-revo2012.github.io/wiki/settings#slnicoliverecstreamlink%E3%81%A7%E9%85%8D%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E9%8C%B2%E7%94%BB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84)  
 
