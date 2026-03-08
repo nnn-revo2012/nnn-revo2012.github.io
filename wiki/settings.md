@@ -14,14 +14,13 @@
     - [■NicoGetCookieを使う（おすすめ）](https://nnn-revo2012.github.io/wiki/settings#nicogetcookie%E3%82%92%E4%BD%BF%E3%81%86%E3%81%8A%E3%81%99%E3%81%99%E3%82%81)  
     - [■直接FirefoxのCookieを取得する](https://nnn-revo2012.github.io/wiki/settings#%E7%9B%B4%E6%8E%A5firefox%E3%81%AEcookie%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)  
   
-
 - [SlNicoLiveRec(Streamlink)で「配信していません」が表示され録画できない](https://nnn-revo2012.github.io/wiki/settings#slnicoliverecstreamlink%E3%81%A7%E9%85%8D%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E9%8C%B2%E7%94%BB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84)  
 
 ***
 ## SlNicoLiveRec(Streamlink --default-stream)で指定する画質設定一覧  
 
 コピペするように"＊＊＊＊"のように囲ってあります  
-＊SlNicoLiveRecの場合は、録画画質→default-streamにコピペした後両端の""を削除してください  
+ ~~＊SlNicoLiveRecの場合は、録画画質→default-streamにコピペした後両端の""を削除してください~~  
 
 **ユーザー生のタイムシフトは2026年3月29日まで新旧仕様の画質が混在する**  
 **（2026年1月27日までのユーザー生のタイムシフトは旧画質、1月28日以降のタイムシフトは新画質になる）**  
@@ -136,8 +135,8 @@ E-Mail、Password でログインしました
 ***
 ## SlNicoLiveRecで「user_sessionでログイン」に設定する方法  
 
-他ツールでもuser_sessionを指定できるツールなら6.の手順(直接FirefoxのCookieなら8.～9.)を他ツールの手順に変換すれば可能です  
-ニコニコにログインしているブラウザーからuser_sessionというCookieをコピーする必要があります。
+ニコニコにログインしているブラウザーからuser_sessionというCookieをコピーする必要があります  
+他ツールでもuser_sessionを指定できるツールならChromeは6.、NicoGetCookieは7.、直接FirefoxのCookieは8.～9.を他ツールの手順に変換すれば可能です  
 
 ### ☆Chromeの場合  
 
@@ -157,7 +156,8 @@ E-Mail、Password でログインしました
 **Windows専用プログラムですがGUIを使って簡単にuser_sessionを取得できます**  
 
 手順
-1. NicoGetCookieを 「Github](https://github.com/nnn-revo2012/NicoGetCookie/releases) からダウンロードしてください  
+1. Firefoxでニコニコにログインする（２段階認証も可能）※既にログインしているなら必要なし  
+1. NicoGetCookieを [NicoGetCookie/releases](https://github.com/nnn-revo2012/NicoGetCookie/releases) からダウンロードしてください  
 1. ダウンロード後zipファイルを解凍し、その中のNicoGetCookie.exeをダブルクリックします  
 1. NicoGetCookieが起動します。「ブラウザーから取得」のリストボックスをクリックしてCookieを取得したいブラウザー名を選択してください  
    ブラウザー名の後ろに「（ｘｘｘｘｘ）」と表示されているのが現在ニコニコにログインされているブラウザーです  
