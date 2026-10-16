@@ -118,19 +118,9 @@
 ***
 ## SlNicoLiveRecで「E-Mail、Password でログインしました」と表示されるが何もしないで終了する  
 
-```
-[plugins.nicolive][info] Logging in via provided email and password
-E-Mail、Password でログインしました  
----------- Program End Time: 2026/02/10 15:26:18.4817 ----------
-```  
-
-### 原因：２段階認証が必要なアカウントでログインしている  
-- SlNicoLiveRecは２段階認証オンのアカウントでE-mail/Passwordでログインできません  
-
-### 解決方法  
-- ブラウザー(ChromeやFirefoxなど)からCookieのuser_sessionを取得してuser_sessionでログインしてください  
-  設定方法は [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) を参照  
-- ２段階認証をオフにできるアカウントであればオフにしてください（非推奨）  
+2026年8月にニコニコにログインするAPIが仕様変更になり、BOT対策で自動的にログインできないようになりました  
+そのため SlNicoLiveRec はE-Mail、Passwordでログインする機能を削除したのでこのFAQは削除します  
+※Streamlink自体は修正されていませんが、ニコニコ側で仕様変更されてるのでE-Mail、Passwordでログインできません  
 
 ***
 ## SlNicoLiveRecで「user_sessionでログイン」に設定する方法  
@@ -216,8 +206,7 @@ error: No playable streams found on this URL: https://live.nicovideo.jp/watch/lv
   - プレミアム会員か確認してみてください  
   - ブラウザで再生開始してからダウンロードを開始してみてください  
 - 今回初めてSlNicoLiveRecを設定または再設定の場合  
-  - **設定→ニコニコアカウント情報で「user_sessionでログイン」か「E-Mail、Passwordでログイン」のどちらかに設定してください**  
-  - **アカウントが２段階認証オンの場合は必ず「user_sessionでログイン」にしてください**  
+  - **設定→ニコニコアカウント情報で「user_sessionでログイン」に設定してください**  
   - 「user_sessionでログイン」の設定方法は [SlNicoLiveRecで「user_sessionでログイン」に設定する方法](https://nnn-revo2012.github.io/wiki/settings#slnicoliverec%E3%81%A7user_session%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) を参照  
   - プレミアム会員か確認してみてください  
   - ブラウザで再生開始してからダウンロードを開始してみてください  
@@ -238,4 +227,5 @@ error: No playable streams found on this URL: https://live.nicovideo.jp/watch/lv
 
 ### 解決方法  
 - しばらく時間を置いてから録画・ダウンロードする  
-
+- 頻発する場合は SlNicoLiveReclive に添付のStreamlinkの nicolive.py の中のSTREAM_READY_TIMEOUTの値を30秒ぐらいに修正してください  
+  (と書いてわかる人のみ修正してください)  
